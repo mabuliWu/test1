@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+      当前认证页面表单编写必须有一定规则,
+        1.method 必须是post
+        2.action 必须是认证失败的跳转页面
+
+        shiro底层会判断这两个条件都满足时才会执行认证
+
+        3.账号密码记住我的表单名称有默认的规则
+            账号 username
+            密码 password
+            记住我 rememberMa
+-->
+
+
+我是登录页面
+<span style="color: red" th:text="${errorMsg}"></span>
+
+<form th:action="@{/admin/loginError}" method="post">
+    账号:<input type="text" name="username" required> <br>
+    密码:<input type="password" name="password" required><br>
+    记住我: <input type="checkbox" name="rememberMe"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
