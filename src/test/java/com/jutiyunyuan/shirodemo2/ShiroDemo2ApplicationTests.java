@@ -13,6 +13,7 @@ class ShiroDemo2ApplicationTests {
     @Test
     void test()  {
         System.out.println("hello world");
+        System.out.println("didid");
     }
 
     @Test
