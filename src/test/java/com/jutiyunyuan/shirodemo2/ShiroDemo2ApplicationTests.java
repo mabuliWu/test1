@@ -8,6 +8,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ShiroDemo2ApplicationTests {
 
+
+
+    @Test
+    void test()  {
+        System.out.println("hello world");
+    }
+
     @Test
     void contextLoads() {
         //原始密码
